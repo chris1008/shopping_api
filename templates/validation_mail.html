@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員驗證信</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #main-content {
+            background-color: #D6F0EC;
+            padding: 1rem;
+        }
+        #navbar {
+            margin: 0 auto 39px auto;
+            text-align: center;
+        }
+        #logo-pic img {
+            max-width: 28px;
+            max-height: 24px;
+            margin-right: 0.25rem;
+        }
+        #title {
+            font-weight: 500;
+            font-family: "Heebo";
+            font-size: 18px;
+            color: #000000;
+            margin-left: 0.25rem;
+        }
+        #validation-pic {
+            text-align: center;
+        }
+        #validation-pic img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        #content-box {
+            margin-top: 16px;
+            padding: 40px 18px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            position: relative;
+        }
+        #content-greeting {
+            font-family: "Heebo";
+            font-weight: bold;
+            font-size: 20px;
+            color: #191919;
+        }
+        #content-description {
+            font-family: "Noto Sans TC";
+            font-size: 18px;
+            margin: 16px 0;
+            color: #3B3B3B;
+        }
+        #validation-code-box {
+            width: 252px;
+            height: 137px;
+            background-color: #ECF2F0;
+            border-radius: 8px;
+            font-family: "Heebo";
+            font-weight: 800;
+            font-size: 64px;
+            color: #48484A;
+            display: table;
+            margin: 0 auto;
+        }
+        #validation-code {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #contact-email {
+            font-family: "Heebo";
+            text-align: center;
+            color: #48484A;
+        }
+        #social-links {
+            margin: 24px 0;
+            text-align: center;
+        }
+        #social-links a {
+            text-decoration: none;
+        }
+        #instagram-icon, #facebook-icon {
+            max-width: 32px;
+            max-height: 32px;
+            margin: 0 13.5px;
+        }
+        #other-content {
+            padding: 0.5rem;
+        }
+        #other-content a {
+            color: #191919;
+            font-family: "Heebo";
+            text-decoration: none;
+        }
+        .separator {
+            margin: 0 1rem;
+        }
+        @media screen and (min-width: 680px) {
+            #logo-pic img {
+                max-width: 39px;
+                max-height: 34px;
+            }
+            #title {
+                font-size: 24px;
+            }
+            #content-box {
+                padding: 40px 37px;
+            }
+            #validation-code-box {
+                width: 525px;
+                height: 177px;
+                font-size: 96px;
+                padding: 40px 239px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <main>
+    
+            <div id="content-box">
+                <div id="content-greeting">
+                    您好, 👋
+                </div>
+                <div id="content-description">
+                    您的帳號已創建。<br>
+                    請輸入以下驗證碼完成啟用操作：
+                </div>
+                <div id="validation-code-box">
+                    <div id="validation-code">
+                        {{ validation_code }}
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    </div>
+</body>
+</html>
