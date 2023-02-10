@@ -30,6 +30,12 @@ uvicorn main:app --reload
 ## API線上網址(已部屬至GCP)
 <https://0lid79.deta.dev/v1/docs>
 
+## 線上網站demo
+將後端功能呈現在前端及訓練整合前後端能力，操作上也較為直覺。
+其他前端頁面持續製作整合中(Available features:會員註冊、登入、純顯示商店測試資料)
+
+<https://chris-shop.000webhostapp.com/>
+
 ## API文件範例
 ![image](https://i.imgur.com/hvV6g6a.png)
 ![image](https://i.imgur.com/aNtMJRC.png)
